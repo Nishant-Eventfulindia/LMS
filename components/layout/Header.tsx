@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { siteContent } from '@/data/content';
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { siteContent } from "@/data/content";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,9 @@ export default function Header() {
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">DA</span>
             </div>
-            <span className="font-bold text-xl text-gray-900">{siteContent.global.siteName}</span>
+            <span className="font-bold text-xl text-gray-900">
+              {siteContent.global.siteName}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,25 +36,6 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-
-          {/* Desktop Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link href="/login">
-              <Button variant="ghost" className="text-gray-600 hover:text-blue-600">
-                Login
-              </Button>
-            </Link>
-            <Link href="/signup">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                Sign Up
-              </Button>
-            </Link>
-            <Link href="/courses">
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-                Get Started
-              </Button>
-            </Link>
-          </div>
 
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -75,23 +58,6 @@ export default function Header() {
                     </Link>
                   ))}
                 </nav>
-                <div className="flex flex-col space-y-3">
-                  <Link href="/login" onClick={() => setIsOpen(false)}>
-                    <Button variant="outline" className="w-full">
-                      Login
-                    </Button>
-                  </Link>
-                  <Link href="/signup" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                      Sign Up
-                    </Button>
-                  </Link>
-                  <Link href="/courses" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-                      Get Started
-                    </Button>
-                  </Link>
-                </div>
               </div>
             </SheetContent>
           </Sheet>

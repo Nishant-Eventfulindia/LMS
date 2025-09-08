@@ -281,7 +281,18 @@ export const siteContent = {
       slug: "apps-games",
       level: "Advanced",
       price: 99
-    }
+    },
+    {
+      id: "9",
+      title: "JavaScript",
+      description: "Deep dive into JavaScript, ES6+ features, and modern development practices.",
+      icon: "Braces",
+      courseCount: 22,
+      duration: "35+ hours",
+      slug: "javascript",
+      level: "Beginner",
+      price: 75
+    },
   ] as Course[],
   pricing: {
     hero: {

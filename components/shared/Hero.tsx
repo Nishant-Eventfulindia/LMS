@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { ArrowRight } from 'lucide-react';
 
 interface HeroProps {
   headline: string;
@@ -16,7 +17,6 @@ export default function Hero({
   primaryCTA, 
   secondaryCTA, 
   heroImage,
-  badge 
 }: HeroProps) {
   return (
     <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 lg:py-28 overflow-hidden">
@@ -44,11 +44,7 @@ export default function Hero({
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 z-10">
-            {badge && (
-              <Badge variant="secondary" className="bg-blue-100 text-blue-700 hover:bg-blue-200 border-0 px-4 py-2">
-                {badge}
-              </Badge>
-            )}
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               {headline}
             </h1>
@@ -58,19 +54,12 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                {primaryCTA}
+                {/* {primaryCTA} */}
+                View All Courses <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              {secondaryCTA && (
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-base font-semibold rounded-xl transition-all duration-300"
-                >
-                  {secondaryCTA}
-                </Button>
-              )}
+              
             </div>
           </div>
           
