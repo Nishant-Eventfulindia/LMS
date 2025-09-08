@@ -57,6 +57,8 @@ export interface Course {
   instructor?: Instructor;
   price?: number;
   level?: 'Beginner' | 'Intermediate' | 'Advanced';
+  category?: string;
+  students?: number;
 }
 
 export interface Chapter {

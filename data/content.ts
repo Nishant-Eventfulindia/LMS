@@ -14,7 +14,7 @@ import type {
 
 export const siteContent = {
   global: {
-    siteName: "Divi Coding Academy",
+    siteName: "Noddy",
     tagline: "Learn to Code Websites, Apps & Games",
     logo: "/images/logo.png",
     contact: {
@@ -174,6 +174,8 @@ export const siteContent = {
       duration: "40+ hours",
       slug: "web-development",
       level: "Beginner",
+      category: "Web Development",
+      students: 12500,
       chapters: [
         {
           id: "1",
@@ -214,6 +216,8 @@ export const siteContent = {
       duration: "25+ hours", 
       slug: "python",
       level: "Beginner",
+      category: "Data Science",
+      students: 8900,
       price: 69
     },
     {
@@ -225,6 +229,8 @@ export const siteContent = {
       duration: "30+ hours",
       slug: "ux-design", 
       level: "Intermediate",
+      category: "UI/UX Design",
+      students: 6700,
       price: 89
     },
     {
@@ -235,7 +241,9 @@ export const siteContent = {
       courseCount: 7,
       duration: "20+ hours",
       slug: "database-design",
-      level: "Intermediate", 
+      level: "Intermediate",
+      category: "Data Science",
+      students: 4200,
       price: 59
     },
     {
@@ -247,6 +255,8 @@ export const siteContent = {
       duration: "35+ hours",
       slug: "javascript",
       level: "Beginner",
+      category: "Web Development",
+      students: 15200,
       price: 75
     },
     {
@@ -258,6 +268,8 @@ export const siteContent = {
       duration: "45+ hours",
       slug: "html-css",
       level: "Beginner",
+      category: "Web Development",
+      students: 18900,
       price: 49
     },
     {
@@ -269,6 +281,8 @@ export const siteContent = {
       duration: "10+ hours", 
       slug: "intro-to-coding",
       level: "Beginner",
+      category: "Web Development",
+      students: 25000,
       price: 29
     },
     {
@@ -280,18 +294,22 @@ export const siteContent = {
       duration: "50+ hours",
       slug: "apps-games",
       level: "Advanced",
+      category: "Mobile Apps",
+      students: 7800,
       price: 99
     },
     {
       id: "9",
-      title: "JavaScript",
-      description: "Deep dive into JavaScript, ES6+ features, and modern development practices.",
+      title: "React Development",
+      description: "Master React.js for building modern, interactive web applications with hooks and context.",
       icon: "Braces",
-      courseCount: 22,
-      duration: "35+ hours",
-      slug: "javascript",
-      level: "Beginner",
-      price: 75
+      courseCount: 15,
+      duration: "30+ hours",
+      slug: "react-development",
+      level: "Intermediate",
+      category: "Web Development",
+      students: 11200,
+      price: 85
     },
   ] as Course[],
   pricing: {

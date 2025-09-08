@@ -102,7 +102,7 @@ export default function Marketing() {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {course.description}
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between pb-2">
                     <Badge variant="secondary" className="bg-green-100 text-green-700">
                       {course.level}
                     </Badge>
@@ -185,7 +185,7 @@ export default function Marketing() {
               {marketing.finalCTA.freeOption}
             </Button>
             <Link href="/pricing">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3">
+              <Button size="lg" variant="outline" className="border-white text-blue-600 hover:bg-white hover:text-blue-600 px-8 py-3">
                 {marketing.finalCTA.premiumOption}
               </Button>
             </Link>
