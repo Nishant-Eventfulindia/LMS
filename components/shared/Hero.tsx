@@ -45,7 +45,7 @@ export default function Hero({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 z-10">
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl  font-bold text-gray-900 leading-tight">
               {headline}
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
